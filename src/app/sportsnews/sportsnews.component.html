@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <h3><u>Sports News</u></h3>
+    <div class="row">
+        <div *ngFor="let d of sportsNewsDisplay" class="col-lg-4 mt-4 mb-4">
+
+            <div class="box">
+                <img src="{{d.urlToImage}}" width="100%">
+                <h5 class="mt-2 mb-2">{{d.title}}</h5>
+                <!-- <p>{{d.content}}</p> -->
+                <a href="{{d.url}}" target="_blank" class="btn btn-sm mt-2 innerbox">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
